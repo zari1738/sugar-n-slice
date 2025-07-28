@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Sugar n' Slice – Freshly baked cakes, cookies, and pastries. Order online today!"/>
+  <meta name="keywords" content="bakery, cakes, cookies, pastries, Sugar n' Slice"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+  <div id="header-container">
+    </div>
+  </header>
+
+  <section class="services-hero">
+    <h1>Our Shop</h1>
+    <p>Discover our delicious variety of baked goods — from gluten-free to dairy-free and more wholesome treats.</p>
+  </section>
+
+  <div class="shop-layout">
+    <aside class="filter-section">
+      <h3>Filter by Category</h3>
+      <label><input type="checkbox" value="gluten-free" checked onchange="filterProducts()"> Gluten Free</label><br>
+      <label><input type="checkbox" value="dairy-free" checked onchange="filterProducts()"> Dairy Free</label><br>
+      <label><input type="checkbox" value="nut-free" checked onchange="filterProducts()"> Nut Free</label><br>
+      <label><input type="checkbox" value="vegan" checked onchange="filterProducts()"> Vegan</label><br>
+      <label><input type="checkbox" value="sugar-free" checked onchange="filterProducts()"> Sugar Free</label><br>
+      </aside>
+
+    <section class="product-list" id="product-list">
+      <!-- Products will be loaded by JavaScript -->
+    </section>
+  </div>
+
+  <script src="header.js"></script>
+  <script src="filter.js"></script>
+</body>
+</html>
+

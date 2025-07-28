@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Sugar n' Slice – Freshly baked cakes, cookies, and pastries. Order online today!"/>
+  <meta name="keywords" content="bakery, cakes, cookies, pastries, Sugar n' Slice"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+  <div id="header-container">
+    </div>
+  </header>
+
+    <!-- Hero Slide Carousel -->
+  <section class="hero-carousel">
+    <div class="slider-wrapper" id="sliderWrapper">
+      <div class="slide">
+        <img src="strawberry-cake.png" alt="Strawberry Cake">
+        <div class="caption">
+          <h1>Freshly Baked Cakes</h1>
+          <a href="#" class="btn">Order Now</a>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="cupcakes.png" alt="Cupcakes">
+        <div class="caption">
+          <h1>Colorful Cupcakes</h1>
+          <a href="#" class="btn">Browse Menu</a>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="cookies.png" alt="Cookies">
+        <div class="caption">
+          <h1>Chewy Cookies</h1>
+          <a href="#" class="btn">Shop Treats</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured">
+  <h2>Featured Products</h2>
+  <div class="product-grid">
+    
+    <div class="product-card">
+      <img src="Brownies.jpg" alt="Brownies">
+      <p class="product-label">Best Sellers</p>
+    </div>
+    
+    <div class="product-card">
+      <img src="pscookies.jpg" alt="Pumpkin Spice Cookies">
+      <p class="product-label">Seasonal Treats</p>
+    </div>
+    
+    <div class="product-card">
+      <img src="pastry.jpg" alt="Choux Pastry">
+      <p class="product-label">Choux Pastry</p>
+    </div>
+
+  </div>
+</section>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>Homemade & Handcrafted</h2>
+    <p>
+      Welcome to Sugar n’ Slice! We take pride in creating artisanal baked goods made with the finest ingredients.
+      Our passion for baking is reflected in every cake, cookie, and pastry we offer.
+    </p>
+    <a href="#" class="btn">Learn More</a>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Order Online Today!</h2>
+    <a href="#" class="btn">Browse Menu</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Contact: info@sugarnslice.com</p>
+    <p>Follow us: 
+      <a href="#">Facebook</a>  |
+      <a href="#">Instagram</a>  |
+      <a href="#">Twitter</a>   |
+      <a href="#">Our Policies</a>
+    </p>
+  </footer>
+
+   <script>
+    let slideIndex = 0;
+    const sliderWrapper = document.getElementById("sliderWrapper");
+    const totalSlides = document.querySelectorAll(".slide").length;
+
+    function slideCarousel() {
+      slideIndex = (slideIndex + 1) % totalSlides;
+      sliderWrapper.style.transform = `translateX(-${slideIndex * 100}%)`;
+    }
+
+    setInterval(slideCarousel, 4000); 
+  </script>
+    <script src="header.js"></script>
+
+</body>
+</html>
